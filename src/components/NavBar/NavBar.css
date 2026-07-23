@@ -1,0 +1,66 @@
+.header-navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-logotipo-navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/* Logotipo da Esquerda */
+.header-logo-primary{
+    color: white;
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header-logo-secundary{
+    color: rgb(107, 107, 243);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header-list-navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navigation-header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+}
+
+a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: rgb(107, 107, 243);
+}
+
+
+
+/* Icone do WhatsApp */
+#icon-whatsapp{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#icon-whatsapp:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,168 @@
+#inicio{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 120px 20px 40px;
+}
+
+.container-section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.text-1{
+    display: flex;
+    background-color: rgb(231, 231, 247);
+    border-radius: 20px;
+    margin-right: 10px ;
+}
+
+.text-1 p{
+        font-size: 15px;
+        color: rgb(144, 144, 243);
+        font-weight: bold;
+}
+
+.text-2{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.text-2 p{
+    color: black;
+    font-size: 45px;
+    width: 100%;
+    text-align: left;
+}
+
+.txt-blue{
+    font-size: 25px;
+    color: rgb(144, 144, 243);
+}
+
+.text-3{
+    margin-right: 10px ;
+}
+
+.text-3 p{
+    color: rgba(0, 0, 0, 0.617);
+    text-align: left;
+}
+
+/* Botões */
+.container-section-btn-cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+#btn-ver-cardapio,
+#btn-falar-no-whatsapp {
+    padding: 14px 28px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+#btn-ver-cardapio {
+    background-color: #00B4D8;
+}
+
+#btn-falar-no-whatsapp {
+    background-color: #07BA07;
+}
+
+.container-section-img{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#img-header{
+    width: 100%;
+    transition: transform 0.4s ease;
+    transform-origin: center center;
+}
+
+#img-header:hover{
+    transform: scale(1.2);
+}
+
+/* Imagem principal */
+
+#img-header{
+    border-radius: 50px;
+    opacity: 0.9;
+}
+
+/* Proximas seções  */
+
+.container-1-details{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 50px 200px;
+    background: #f8f6f5;
+}
+
+.content-img{
+    text-align: left;
+}
+
+.content-title p{
+    font-weight: 500;
+    padding-top: 20px;
+    width: 100%;
+    text-align: left;
+
+}
+
+.content-subtitle p{
+    text-align: left;
+    color: rgba(0, 0, 0, 0.505);
+}
+
+#cardapio{
+    padding: 40px;
+}
+
+.container-cardapio-1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 40px;
+}
+
+.container-cardapio-title p{
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 30px;
+    margin-bottom: 20px;
+}
+
+.container-cardapio-subtitle p{
+    color: rgba(0, 0, 0, 0.503);
+}
+
+#sobre{
+    padding: 120px 20px 40px;
+}
+
+#contato{
+    padding: 120px 20px 40px;
+}

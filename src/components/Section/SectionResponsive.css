@@ -1,0 +1,179 @@
+/* ===========================
+   TABLET
+=========================== */
+
+@media (min-width: 469px) and (max-width: 768px){
+
+    .container-section-1{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-section-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .container-1-details{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .carousel-window{
+        max-width: 560px;
+    }
+
+    .card{
+        min-width: 250px;
+    }
+
+    .header-navbar{
+        display: hidden;
+    }
+
+
+}
+
+/* ===========================
+   CELULAR
+=========================== */
+
+@media (min-width: 320px) and (max-width: 468px){
+
+    /* Header */
+
+
+    .navigation-header{
+        display: none;
+    }
+
+    .container-section-1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .container-section-txt{
+        width: 100%;
+    }
+
+    .text-1,
+    .text-2,
+    .text-3{
+        width: 100%;
+    }
+
+    .text-2 p{
+        font-size: 2rem;
+    }
+
+    .text-3 p{
+        font-size: 1rem;
+    }
+
+    .container-section-btn-cta{
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .container-section-btn-cta input{
+        width: 100%;
+    }
+
+    .container-section-img{
+        width: 100%;
+    }
+
+    .container-section-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Cards de detalhes */
+
+    .container-1-details{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .content-1,
+    .content-2,
+    .content-3{
+        width: 90%;
+    }
+
+    /* Cardápio */
+
+    .container-cardapio-title{
+        text-align: center;
+    }
+
+    .container-cardapio-subtitle{
+        text-align: center;
+    }
+
+    /* Carrossel */
+
+    .carousel-container{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:10px;
+    }
+
+    .carousel-window{
+        width:100%;
+        overflow:hidden;
+    }
+
+    .carousel{
+        gap:0;
+    }
+
+    .card{
+        min-width:100%;
+        width:100%;
+        padding:15px;
+        box-sizing:border-box;
+    }
+
+    .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .btn-carousel{
+        width:40px;
+        height:40px;
+        font-size:18px;
+    }
+
+    /* Footer */
+
+    #footer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background-color: red;
+        flex-direction: column;
+        width: 100%;
+    }
+
+   .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        gap: 20px;
+    }
+}
