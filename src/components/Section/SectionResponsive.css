@@ -1,53 +1,33 @@
 /* ===========================
-   TABLET
-=========================== */
-
-@media (min-width: 469px) and (max-width: 768px) {
-
-    .container-section-1 {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .container-section-img img {
-        width: 100%;
-        height: auto;
-    }
-
-    .container-1-details {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .carousel-window {
-        max-width: 560px;
-    }
-
-    .card {
-        min-width: 250px;
-    }
-
-    .header-navbar {
-        display: hidden;
-    }
-
-
-}
-
-/* ===========================
    CELULAR
 =========================== */
 
 @media (min-width: 320px) and (max-width: 468px) {
 
     /* Header */
-
-
-    .navigation-header {
-        display: none;
+    .header-list-navbar {
+        display: none !important;
     }
+
+    #icon-whatsapp{
+        display: none !important;
+    }
+
+    /* Menu Mobile */
+
+    #menu-mobile{
+        display: flex !important;
+        height: 40px;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
 
     .container-section-1 {
         flex-direction: column;
@@ -160,15 +140,15 @@
 
     #footer {
         display: flex;
-        text-align: center;
+        text-align: left;
         align-items: center;
-        background-color: red;
         flex-direction: column;
         width: 100%;
     }
 
     .container-footer {
         display: flex;
+        text-align: left;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -176,4 +156,49 @@
         width: 100%;
         gap: 20px;
     }
+
+    .container-footer .footer-title{
+        display: flex;
+        text-align: left;
+        width: 100%; 
+    }
 }
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (min-width: 469px) and (max-width: 768px) {
+
+    .container-section-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-section-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-1-details {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .carousel-window {
+        max-width: 560px;
+    }
+
+    .card {
+        min-width: 250px;
+    }
+
+    .header-navbar {
+        display: hidden;
+    }
+}
+

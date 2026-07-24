@@ -12,7 +12,7 @@ import Caixaentrega from "../../assets/caixa-de-entrega.png"
 
 // Importação de Componente
 import Carousel from '../Carousel/Carousel'
-import Footer from '../Footer/Footer'
+// import Footer from '../Footer/Footer'
 
 // Importação de UsEffect e Scrool 
 import { useEffect } from "react";
@@ -145,8 +145,7 @@ useEffect(() => {
             <section id="contato">
                 ...
             </section> */}
-
-            <Footer></Footer>   
+   
         </>
     )
 }

@@ -14,16 +14,21 @@
 
 .container-footer{
     display: inline-block;
+    padding: 20px;
     flex-direction: column;
     text-align: left;
     gap: 10px;
     width: 25%;
-
 }
 
 .footer-title{
     color: black;
 }
+
+.container-footer ul{
+    width: 100%;
+}
+
 
 ul{
     display: flex;
@@ -33,4 +38,14 @@ ul{
 
 .links{
     color: rgba(0, 0, 0, 0.437);
+}
+
+.autor{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #00B4D8;
 }

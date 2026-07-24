@@ -9,7 +9,6 @@ function Footer(){
 
                 <div className="container-footer">
                     <p className="footer-title"> Doces da Mari </p>
-                    <br></br>
 
                     <p className="links">Transformando ingredientes simples 
                         em momentos inesquecíveis. 
@@ -19,7 +18,6 @@ function Footer(){
 
                 <div className="container-footer">
                     <p className="footer-title"> Links </p>
-                    <br></br>
 
                     <ul>
                         <li className="links"> Nossa História </li>
@@ -32,7 +30,6 @@ function Footer(){
 
                 <div className="container-footer">
                     <p className="footer-title"> Contato </p>
-                    <br></br>
                     <ul>
                         <li className="links"> imagem :  11 9 67876543 </li>
                         <li className="links"> imagem : email@gmail.com </li>
@@ -43,7 +40,6 @@ function Footer(){
 
                 <div className="container-footer">
                     <p className="footer-title"> Horários </p>
-                    <br></br>
                     <ul>
                         <li className="links"> Seg - Sex: 09h ás 18h </li>
                         <li className="links"> Sáb: 09h ás 14h </li>
@@ -52,6 +48,10 @@ function Footer(){
 
                 </div>
             </section> 
+            <section className="autor">
+                <p> Desenvolvido Por Nathan Cruz 😉</p>
+
+            </section>
         </>
     )
 }
