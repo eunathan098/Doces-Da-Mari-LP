@@ -12,7 +12,8 @@
     align-items: center;
     justify-content: center;
 }
-/* Logotipo da Esquerda */
+
+/* Logotipo */
 .header-logo-primary{
     color: white;
     margin-right: 5px;
@@ -33,29 +34,29 @@
     justify-content: center;
 }
 
-
+/* Navegação */
 .navigation-header{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    align-items: center;
     gap: 20px;
 }
 
-a {
+/* Apenas os links do menu */
+.navigation-header a{
     display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-a:hover {
+.navigation-header a:hover{
     transform: scale(1.1);
     color: rgb(107, 107, 243);
 }
 
-
-
-/* Icone do WhatsApp */
+/* Ícone do WhatsApp */
 #icon-whatsapp{
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -65,48 +66,61 @@ a:hover {
     transform: scale(1.2);
 }
 
-/* Icone de Menu */
+/* Ícone do Menu Mobile */
 #menu-mobile{
     display: none;
     height: 40px;
+    cursor: pointer;
 }
 
+/* Menu Mobile */
 #container-menu{
     display: none;
-    text-align: left;
-    align-items: center;
-    justify-content: left;
     position: fixed;
     top: 0;
-    width: 100%;
     right: -50%;
+    width: 100%;
     height: 100vh;
-    background-color: #00B4D8;
+
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: #00B4D8;
 }
 
 .container-fechar-menu{
     display: flex;
-    text-align: left;
-    justify-content: left;
+    justify-content: flex-start;
     width: 100%;
     padding: 10px;
     background-color: #00B4D8;
 }
 
 #container-menu ul{
-    /* display: none; */
-    text-align: left;
-    align-items: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 100%;
-    width: 100%;
     gap: 20px;
+
+    width: 100%;
+    height: 100%;
+
+    list-style: none;
     padding-left: 40px;
 }
 
 #container-menu ul li{
     display: flex;
-    text-align: left;
-    justify-content: left;
+}
+
+#container-menu ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease, transform .3s ease;
+}
+
+#container-menu ul li a:hover{
+    color: rgb(107, 107, 243);
+    transform: translateX(5px);
 }

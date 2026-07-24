@@ -80,6 +80,7 @@
     font-weight: 700;
     transition: 0.3s ease;
     width: 200px;
+    text-decoration: none;
 }
 
 #btn-ver-cardapio {
@@ -164,20 +165,68 @@
     color: rgba(0, 0, 0, 0.503);
 }
 
+/* Sessão SOBRE */
 #sobre{
     padding: 120px 20px 40px;
 }
 
-#contato{
-    padding: 120px 20px 40px;
+.container-sobre{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
 }
 
-/* WhatsApp Flutuante */
-#whatsapp-flutuante{
+.container-sobre p{
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+    width: 100%;
+}
+
+.container-sobre-redes-sociais{
     display: flex;
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-    height: 50px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#instagram{
+    padding: 20px;
+    width: 300px;
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    font-family: sans-serif, "nunito";
+    border-radius: 30px;
     cursor: pointer;
+    transition: ease-in-out3s;
+}
+
+#instagram{
+    opacity: 0.8;
+}
+/* #contato{
+    padding: 120px 20px 40px;
+} */
+
+/* WhatsApp Flutuante */
+#whatsapp-flutuante {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 99999;
+}
+
+#whatsapp-flutuante:hover {
+    transform: scale(1.1);
+}
+
+.confeiteira{
+    height: 200px;
+    border-radius: 100%;
 }

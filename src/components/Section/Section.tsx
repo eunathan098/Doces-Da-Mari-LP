@@ -10,6 +10,7 @@ import Bolo from "../../assets/bolo.png"
 import Bolinho from "../../assets/bolinho.png"
 import Caixaentrega from "../../assets/caixa-de-entrega.png"
 import IconeFlutuanteDoWhatsApp from "../../assets/whatsapp.png"
+import MariConfeiteira from "../../assets/confeiteira-mari.png"
 
 // Importação de Componente
 import Carousel from '../Carousel/Carousel'
@@ -35,6 +36,12 @@ useEffect(() => {
 
     return(
         <>
+        {/* Icone Flutuante do WhatsApp */}
+
+            <a href="https://wa.me/5511910544421">
+                <img src={IconeFlutuanteDoWhatsApp} alt="WhatsApp" id='whatsapp-flutuante'/>
+            </a>
+            
             <section id="inicio">
                 <div className="container-section-1 reveal">
                     <div className="container-section-txt">
@@ -76,7 +83,7 @@ useEffect(() => {
             {/* Sessão de Detalhes */}
 
             <div className="container-1-details">
-{/* esses itens abaixo devem aparecer com o efeito de scrrol */}
+        {/* esses itens abaixo devem aparecer com o efeito de scrrol */}
                     <div className="content-1 reveal">
                         
                         <div className="content-img">
@@ -148,6 +155,13 @@ useEffect(() => {
 
             <section id="sobre">
                 <div className="container-sobre">
+                    <p> Acompanhe pelas Redes Sociais </p>
+                    <div className="container-sobre-redes-sociais">
+                        <img src={MariConfeiteira} alt="" className='confeiteira'/>
+                        <a href="https://www.instagram.com/dev_nathancruz/" id='instagram'>
+                            Seguir 
+                        </a>
+                    </div>
 
                 </div>
             </section>
@@ -155,12 +169,7 @@ useEffect(() => {
             <section id="contato">
                 ...
             </section>
-            {/* Icone Flutuante do WhatsApp */}
-
-            <a href="https://wa.me/5511910544421" target="_blank"
-                rel="noopener noreferrer" className="btn" aria-label="Conversar no WhatsApp">
-                <img src={IconeFlutuanteDoWhatsApp} alt="WhatsApp" id='whatsapp-flutuante'/>
-            </a>
+            
 
         </>
     )
