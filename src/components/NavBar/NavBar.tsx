@@ -39,7 +39,10 @@ function NavBar(){
                     </ul>       
                 </div>
                 {/* Icône do WhatsApp */}
-                <img src={WhatsAppIMG} alt="" height={40} id='icon-whatsapp'/>
+                <a href="https://wa.me/5511910544421" target="_blank"
+                    rel="noopener noreferrer" className="btn">
+                    <img src={WhatsAppIMG} alt="" height={40} id='icon-whatsapp'/>
+                </a>
 
                 {/* Icone de Menu */}
                 <img src={IconeMenuMobile} alt="" id='menu-mobile' onClick={abrirMenuMobile}/>

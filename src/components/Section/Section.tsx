@@ -9,6 +9,7 @@ import BoloIMG from "../../assets/Bolo-confeitaria.jpg"
 import Bolo from "../../assets/bolo.png"
 import Bolinho from "../../assets/bolinho.png"
 import Caixaentrega from "../../assets/caixa-de-entrega.png"
+import IconeFlutuanteDoWhatsApp from "../../assets/whatsapp.png"
 
 // Importação de Componente
 import Carousel from '../Carousel/Carousel'
@@ -54,8 +55,15 @@ useEffect(() => {
                         </div>
 
                         <div className="container-section-btn-cta">
-                            <input type="button" value="Ver cardápio" id='btn-ver-cardapio'/>
-                            <input type="button" value="Falar no WhatsApp" id='btn-falar-no-whatsapp'/>
+
+                            <a href="#cardapio" id='btn-ver-cardapio'>
+                                Ver Cardápio
+                            </a>
+
+                            <a href="https://wa.me/5511910544421" target="_blank"
+                                rel="noopener noreferrer" className="btn" id='btn-falar-no-whatsapp'>
+                                    Fale no WhatsApp
+                            </a>
                         </div>   
                     </div>
                         <div className="container-section-img">
@@ -135,17 +143,25 @@ useEffect(() => {
                         <Carousel></Carousel>
                     </div>
                 </div>
-                ...
+
             </section>
 
-            {/* <section id="sobre">
-                ...
+            <section id="sobre">
+                <div className="container-sobre">
+
+                </div>
             </section>
 
             <section id="contato">
                 ...
-            </section> */}
-   
+            </section>
+            {/* Icone Flutuante do WhatsApp */}
+
+            <a href="https://wa.me/5511910544421" target="_blank"
+                rel="noopener noreferrer" className="btn" aria-label="Conversar no WhatsApp">
+                <img src={IconeFlutuanteDoWhatsApp} alt="WhatsApp" id='whatsapp-flutuante'/>
+            </a>
+
         </>
     )
 }

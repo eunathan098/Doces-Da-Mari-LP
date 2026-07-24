@@ -62,7 +62,7 @@ a:hover {
 }
 
 #icon-whatsapp:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 /* Icone de Menu */
@@ -72,7 +72,7 @@ a:hover {
 }
 
 #container-menu{
-    display: flex;
+    display: none;
     text-align: left;
     align-items: center;
     justify-content: left;
