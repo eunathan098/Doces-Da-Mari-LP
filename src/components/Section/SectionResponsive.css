@@ -118,7 +118,7 @@
     .container-footer{
         flex-wrap:wrap;
         justify-content:center;
-        gap:20px;
+        width: 100%;
     }
 }
 
@@ -244,6 +244,13 @@
         width:100%;
         max-width:450px;
         height:auto;
+    }
+
+    .container-section-btn-cta{
+        display: flex;
+        width: 100%;
+        gap: 0;
+        padding: 0;
     }
 
     /* Detalhes */

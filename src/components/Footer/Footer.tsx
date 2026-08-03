@@ -31,9 +31,10 @@ function Footer(){
                 <div className="container-footer">
                     <p className="footer-title"> Contato </p>
                     <ul>
-                        <li className="links"> imagem :  11 9 67876543 </li>
-                        <li className="links"> imagem : email@gmail.com </li>
-                        <li className="links"> imagem : São Paulo, SP </li>
+                        <li className="links"> Contato :  11 9 67876543 </li>
+                        <li className="links"> E-mail: docesdamari@gmail.com </li>
+                        <li className="links"> Local : São Bernardo do Campo </li>
+                        <li className="links"> Local : São Paulo, SP </li>
                     </ul>
   
                 </div>
@@ -44,6 +45,7 @@ function Footer(){
                         <li className="links"> Seg - Sex: 09h ás 18h </li>
                         <li className="links"> Sáb: 09h ás 14h </li>
                         <li className="links"> Dom: Fechado </li>
+                        <li className="links"> Exclusividade em Feriados </li>
                     </ul>
 
                 </div>

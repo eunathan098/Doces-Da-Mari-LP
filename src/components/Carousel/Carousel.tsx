@@ -68,7 +68,7 @@ function Carousel() {
 
               <p>{produto.preco}</p>
 
-              <button>Comprar</button>
+              <button>Solicitar</button>
             </div>
           ))}
         </div>

@@ -64,10 +64,11 @@
     border-radius: 8px;
     cursor: pointer;
     transition: .3s;
+    font-size: 20px;
 }
 
 .card button:hover {
-    opacity: .9;
+    opacity: .7;
 }
 
 .btn-carousel {

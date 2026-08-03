@@ -35,6 +35,8 @@
 .text-2{
     width: 100%;
     padding-top: 10px;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 300;
 }
 
 .text-2 p{
@@ -42,11 +44,15 @@
     font-size: 45px;
     width: 100%;
     text-align: left;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 300;
 }
 
 .txt-blue{
-    font-size: 25px;
+    font-size: 40px;
     color: rgb(144, 144, 243);
+    font-family: "Oleo Script", system-ui;
+    font-weight: 300;
 }
 
 .text-3{
@@ -64,9 +70,10 @@
 
 .container-section-btn-cta{
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    padding: 30px;
+    justify-content: space-around;
+    padding-top: 30px;
     gap: 10px;
 }
 
@@ -84,14 +91,17 @@
     font-size: 16px;
     font-weight: 700;
     transition: .3s;
+    background-color: red;
 }
 
 #btn-ver-cardapio{
     background:#00B4D8;
+    width: 100%;
 }
 
 #btn-falar-no-whatsapp{
     background:#07BA07;
+    width: 100%;
 }
 
 /* =======================
@@ -234,6 +244,15 @@
 
 #instagram:hover{
     opacity:.6;
+}
+
+/* CONTATO */
+#contato{
+    display: flex;
+    color: white;
+    background-color: #00B4D8;
+    font-size: 13px;
+    padding-left: 40px;
 }
 
 /* =======================
