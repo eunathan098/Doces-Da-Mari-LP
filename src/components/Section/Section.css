@@ -9,12 +9,15 @@
 
 .container-section-1{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-}
+    align-items: center;
 
+    max-width: 1300px;
+    width: 100%;
+
+    margin: 0 auto;
+    gap: 60px;
+}
 .text-1{
     display: flex;
     padding: 5px 10px 5px 15px;
@@ -101,11 +104,9 @@
 }
 
 #img-header{
-    width: 100%;
     border-radius: 50px;
     opacity: .9;
     transition: transform .4s ease;
-    transform-origin: center;
 }
 
 #img-header:hover{
@@ -118,7 +119,9 @@
 
 .container-1-details{
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: center !important;
+    text-align: center;
     align-items: center;
     padding: 200px 50px;
     background:#f8f6f5;
@@ -204,6 +207,9 @@
 }
 
 .container-sobre p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
     width:100%;
     padding:20px;
     box-shadow:0 0 10px rgba(0,0,0,.15);
@@ -227,7 +233,7 @@
 }
 
 #instagram:hover{
-    opacity:.8;
+    opacity:.6;
 }
 
 /* =======================

@@ -7,7 +7,7 @@ function Header(){
     return(
         <>
             <header>
-                <NavBar></NavBar>
+                <NavBar />
             </header>
         </>
     )
