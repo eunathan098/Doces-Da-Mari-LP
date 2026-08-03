@@ -146,7 +146,7 @@ useEffect(() => {
                                 perfeitos para festas ou para aquele momento só seu. </p>
                         </div>
 
-                        {/* Carrossel  de imaens ilustrativas  */}
+                        {/* Carrossel  de Imagens ilustrativas  */}
                         <Carousel></Carousel>
                     </div>
                 </div>

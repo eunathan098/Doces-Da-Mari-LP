@@ -12,9 +12,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
-    gap: 60px;
 }
 
 .text-1{
@@ -22,13 +20,13 @@
     padding: 5px 10px 5px 15px;
     background-color: rgb(231, 231, 247);
     border-radius: 20px;
-    margin-right: 10px ;
+    margin-right: 10px;
 }
 
 .text-1 p{
-        font-size: 15px;
-        color: rgb(144, 144, 243);
-        font-weight: bold;
+    font-size: 15px;
+    color: rgb(144, 144, 243);
+    font-weight: bold;
 }
 
 .text-2{
@@ -49,7 +47,7 @@
 }
 
 .text-3{
-    margin-right: 10px ;
+    margin-right: 10px;
 }
 
 .text-3 p{
@@ -57,7 +55,10 @@
     text-align: left;
 }
 
-/* Botões */
+/* =======================
+   BOTÕES
+======================= */
+
 .container-section-btn-cta{
     display: flex;
     align-items: center;
@@ -67,29 +68,32 @@
 }
 
 #btn-ver-cardapio,
-#btn-falar-no-whatsapp {
+#btn-falar-no-whatsapp{
     display: flex;
-    text-align: center;
     justify-content: center;
+    align-items: center;
     padding: 14px 28px;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
+    width: 200px;
     border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
     font-size: 16px;
     font-weight: 700;
-    transition: 0.3s ease;
-    width: 200px;
-    text-decoration: none;
+    transition: .3s;
 }
 
-#btn-ver-cardapio {
-    background-color: #00B4D8;
+#btn-ver-cardapio{
+    background:#00B4D8;
 }
 
-#btn-falar-no-whatsapp {
-    background-color: #07BA07;
+#btn-falar-no-whatsapp{
+    background:#07BA07;
 }
+
+/* =======================
+   IMAGEM PRINCIPAL
+======================= */
 
 .container-section-img{
     overflow: hidden;
@@ -98,135 +102,152 @@
 
 #img-header{
     width: 100%;
-    transition: transform 0.4s ease;
-    transform-origin: center center;
+    border-radius: 50px;
+    opacity: .9;
+    transition: transform .4s ease;
+    transform-origin: center;
 }
 
 #img-header:hover{
     transform: scale(1.2);
 }
 
-/* Imagem principal */
-
-#img-header{
-    border-radius: 50px;
-    opacity: 0.9;
-}
-
-/* Proximas seções  */
+/* =======================
+   DETALHES
+======================= */
 
 .container-1-details{
     display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    padding: 200px 50px 200px;
-    background: #f8f6f5;
+    align-items: center;
+    padding: 200px 50px;
+    background:#f8f6f5;
+    gap:40px;
 }
 
 .content-img{
-    text-align: left;
+    text-align:left;
 }
 
 .content-title p{
-    font-weight: 500;
-    padding-top: 20px;
-    width: 100%;
-    text-align: left;
-
+    font-weight:500;
+    padding-top:20px;
+    text-align:left;
 }
 
 .content-subtitle p{
-    text-align: left;
-    color: rgba(0, 0, 0, 0.505);
+    text-align:left;
+    color:rgba(0,0,0,.5);
 }
 
+/* =======================
+   CARDÁPIO
+======================= */
+
 #cardapio{
-    padding: 40px;
+    width:100%;
+    padding:80px 20px;
 }
 
 .container-cardapio-1{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px 40px;
+    width:100%;
+    max-width:1300px;
+    margin:0 auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container-text{
+    width:100%;
+}
+
+.container-cardapio-title{
+    width:100%;
+    text-align:center;
 }
 
 .container-cardapio-title p{
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: 30px;
-    margin-bottom: 20px;
+    color:black;
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.container-cardapio-subtitle{
+    width:100%;
+    text-align:center;
+    margin-bottom:40px;
 }
 
 .container-cardapio-subtitle p{
-    color: rgba(0, 0, 0, 0.503);
+    color:rgba(0,0,0,.5);
+    max-width:700px;
+    margin:0 auto;
 }
 
-/* Sessão SOBRE */
+/* =======================
+   SOBRE
+======================= */
+
 #sobre{
-    padding: 120px 20px 40px;
+    padding:120px 20px 40px;
 }
 
 .container-sobre{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
 }
 
 .container-sobre p{
-    padding: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
-    width: 100%;
+    width:100%;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
 }
 
 .container-sobre-redes-sociais{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
 }
 
 #instagram{
-    padding: 20px;
-    width: 300px;
-    color: white;
-    background-color: blue;
-    text-decoration: none;
-    font-family: sans-serif, "nunito";
-    border-radius: 30px;
-    cursor: pointer;
-    transition: ease-in-out3s;
+    width:300px;
+    padding:20px;
+    background:blue;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
 }
 
-#instagram{
-    opacity: 0.8;
-}
-/* #contato{
-    padding: 120px 20px 40px;
-} */
-
-/* WhatsApp Flutuante */
-#whatsapp-flutuante {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 99999;
+#instagram:hover{
+    opacity:.8;
 }
 
-#whatsapp-flutuante:hover {
-    transform: scale(1.1);
+/* =======================
+   WHATSAPP
+======================= */
+
+#whatsapp-flutuante{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    z-index:9999;
+}
+
+#whatsapp-flutuante:hover{
+    transform:scale(1.1);
 }
 
 .confeiteira{
-    height: 200px;
-    border-radius: 100%;
+    height:200px;
+    border-radius:50%;
 }

@@ -4,30 +4,27 @@
 
 @media (min-width: 320px) and (max-width: 468px) {
 
-    /* Header */
+    /* ===========================
+       HEADER
+    =========================== */
+
     .header-list-navbar {
         display: none !important;
     }
 
-    #icon-whatsapp{
+    #icon-whatsapp {
         display: none !important;
     }
 
-    /* Menu Mobile */
-
-    #menu-mobile{
+    #menu-mobile {
         display: flex !important;
         height: 40px;
         cursor: pointer;
     }
 
-
-
-
-
-
-
-
+    /* ===========================
+       SECTION 1
+    =========================== */
 
     .container-section-1 {
         flex-direction: column;
@@ -74,7 +71,9 @@
         height: auto;
     }
 
-    /* Cards de detalhes */
+    /* ===========================
+       DETALHES
+    =========================== */
 
     .container-1-details {
         flex-direction: column;
@@ -88,24 +87,23 @@
         width: 90%;
     }
 
-    /* Cardápio */
+    /* ===========================
+       CARDÁPIO
+    =========================== */
 
-    .container-cardapio-title {
-        text-align: center;
-    }
-
+    .container-cardapio-title,
     .container-cardapio-subtitle {
         text-align: center;
     }
 
-    /* Carrossel */
+    /* ===========================
+       CARROSSEL
+    =========================== */
 
     .carousel-container {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+        gap: 0;
+        margin-top: 20px;
     }
 
     .carousel-window {
@@ -114,57 +112,56 @@
     }
 
     .carousel {
-        gap: 0;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
     }
 
     .card {
-        min-width: 100%;
-        width: 100%;
+        flex: 0 0 100%;
+        scroll-snap-align: center;
         padding: 15px;
-        box-sizing: border-box;
+        flex: 0 0 100% !important;
     }
 
     .card img {
-        width: 100%;
         height: 220px;
-        object-fit: cover;
     }
 
     .btn-carousel {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
+        display: none;
     }
 
-    /* Footer */
+    /* ===========================
+       FOOTER
+    =========================== */
 
     #footer {
         display: flex;
-        text-align: left;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        text-align: left;
         width: 100%;
     }
 
     .container-footer {
         display: flex;
-        text-align: left;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        max-width: 1200px;
-        width: 100%;
         gap: 20px;
+        width: 100%;
+        max-width: 1200px;
     }
 
-    .container-footer .footer-title{
-        display: flex;
+    .container-footer .footer-title {
+        width: 100%;
         text-align: left;
-        width: 100%; 
     }
+
 }
-
-
 
 /* ===========================
    TABLET
@@ -189,16 +186,154 @@
         gap: 30px;
     }
 
+    .header-navbar {
+        display: none;
+    }
+
+    .navigation-header {
+        display: none !important;
+    }
+
+    #icon-whatsapp {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: flex !important;
+    }
+
+    /* ================= CARROSSEL ================= */
+
+    .carousel-container {
+        width: 100%;
+        margin-top: 30px;
+    }
+
     .carousel-window {
-        max-width: 560px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .carousel::-webkit-scrollbar {
+        display: none;
     }
 
     .card {
-        min-width: 250px;
+        flex: 0 0 calc(50% - 10px);
+        scroll-snap-align: center;
     }
 
-    .header-navbar {
+    .btn-carousel {
         display: none;
     }
 }
 
+    /* ===========================
+       SECTION 1
+    =========================== */
+
+    .container-section-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-section-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-1-details {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* ===========================
+       CARROSSEL
+    =========================== */
+
+    .carousel-window {
+        max-width: 100%;
+    }
+
+    .carousel {
+        gap: 20px;
+    }
+
+    .card {
+            flex: 0 0 100% !important;
+
+    }
+
+    /* Tablet */
+@media (min-width: 769px) and (max-width: 900px){
+
+    .card{
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+
+    .card img{
+        height:260px;
+    }
+}
+
+/* Tablet Horizontal */
+@media (min-width:901px) and (max-width:1024px){
+
+    .card{
+        flex: 0 0 calc((100% - 40px) / 3);
+    }
+
+    .card img{
+        height:240px;
+    }
+}
+
+
+/* ===========================
+   TABLET HORIZONTAL / NOTEBOOK PEQUENO
+=========================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .carousel-window {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel {
+        gap: 15px;
+    }
+
+    .card {
+        flex: 0 0 calc((100% - 30px) / 3);
+        padding: 15px;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+
+    .card button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}

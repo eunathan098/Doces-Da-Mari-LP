@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import "./Carousel.css";
 import "../../components/Section/SectionResponsive.css";
 
@@ -23,57 +23,34 @@ const produtos = [
 ];
 
 function Carousel() {
-  const [indice, setIndice] = useState(0);
-  const [cardsVisiveis, setCardsVisiveis] = useState(4);
-  const [larguraCard, setLarguraCard] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
-  const cardRef = useRef<HTMLDivElement>(null);
+  const scroll = (direcao: "left" | "right") => {
+    if (!carouselRef.current) return;
 
-  useEffect(() => {
-    const atualizar = () => {
-      if (window.innerWidth <= 468) {
-        setCardsVisiveis(1);
-      } else if (window.innerWidth <= 768) {
-        setCardsVisiveis(2);
-      } else {
-        setCardsVisiveis(4);
-      }
+    const card = carouselRef.current.querySelector(".card") as HTMLDivElement;
 
-      setTimeout(() => {
-        if (cardRef.current) {
-          const estilo = window.getComputedStyle(cardRef.current);
-          const margin =
-            parseFloat(estilo.marginLeft) +
-            parseFloat(estilo.marginRight);
+    if (!card) return;
 
-          setLarguraCard(cardRef.current.offsetWidth + margin + 20);
-        }
-      }, 50);
-    };
+    const styles = window.getComputedStyle(carouselRef.current);
 
-    atualizar();
+    const gap = parseInt(styles.gap || "20");
 
-    window.addEventListener("resize", atualizar);
+    const distancia = card.offsetWidth + gap;
 
-    return () => window.removeEventListener("resize", atualizar);
-  }, []);
-
-  const proximo = () => {
-    if (indice < produtos.length - cardsVisiveis) {
-      setIndice((prev) => prev + 1);
-    }
-  };
-
-  const anterior = () => {
-    if (indice > 0) {
-      setIndice((prev) => prev - 1);
-    }
+    carouselRef.current.scrollBy({
+      left: direcao === "right" ? distancia : -distancia,
+      behavior: "smooth",
+    });
   };
 
   return (
     <div className="carousel-container">
 
-      <button className="btn-carousel left" onClick={anterior}>
+      <button
+        className="btn-carousel left"
+        onClick={() => scroll("left")}
+      >
         ❮
       </button>
 
@@ -81,16 +58,10 @@ function Carousel() {
 
         <div
           className="carousel"
-          style={{
-            transform: `translateX(-${indice * larguraCard}px)`
-          }}
+          ref={carouselRef}
         >
-          {produtos.map((produto, index) => (
-            <div
-              className="card"
-              key={produto.id}
-              ref={index === 0 ? cardRef : null}
-            >
+          {produtos.map((produto) => (
+            <div className="card" key={produto.id}>
               <img src={produto.imagem} alt={produto.nome} />
 
               <h3>{produto.nome}</h3>
@@ -104,7 +75,10 @@ function Carousel() {
 
       </div>
 
-      <button className="btn-carousel right" onClick={proximo}>
+      <button
+        className="btn-carousel right"
+        onClick={() => scroll("right")}
+      >
         ❯
       </button>
 
