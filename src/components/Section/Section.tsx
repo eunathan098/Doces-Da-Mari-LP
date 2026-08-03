@@ -167,7 +167,7 @@ useEffect(() => {
             </section>
 
             <section id="contato">
-                ESTAMOS LOCALIZADOS ... (Em breve atualização)
+                ESTAMOS ATUALIZANDO ... (Em breve novidades)
             </section>
             
 
