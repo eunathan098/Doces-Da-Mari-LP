@@ -31,7 +31,7 @@
 
 .card {
     flex: 0 0 calc((100% - 60px) / 4);
-    background: #fff;
+    background: #FFFFFF;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .15);

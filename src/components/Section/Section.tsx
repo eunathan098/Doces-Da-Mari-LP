@@ -50,7 +50,7 @@ useEffect(() => {
                         </div>
 
                         <div className="text-2">
-                            <p> Adoçando a vida,
+                            <p className='title-initial'> Adoçando a vida,
                             <span className='txt-blue'> um pedaço </span>  Por vez. </p>
                         </div>
 

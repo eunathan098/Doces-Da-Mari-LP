@@ -5,6 +5,7 @@
     justify-content: center;
     width: 100%;
     padding: 120px 20px 40px;
+    background-color: #FFF8F4;
 }
 
 .container-section-1{
@@ -26,8 +27,12 @@
     margin-right: 10px;
 }
 
+.title-initial{
+    font-family: "Playfair", serif;
+    font-size: 44px;
+}
 .text-1 p{
-    font-size: 15px;
+    font-size: 20   px;
     color: rgb(144, 144, 243);
     font-weight: bold;
 }
@@ -35,24 +40,25 @@
 .text-2{
     width: 100%;
     padding-top: 10px;
-    font-family: "Oleo Script", system-ui;
     font-weight: 300;
+    font-size: 44px;
 }
 
 .text-2 p{
-    color: black;
-    font-size: 45px;
+    font-size: 44px;
     width: 100%;
     text-align: left;
-    font-family: "Oleo Script", system-ui;
+    font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
     font-weight: 300;
 }
 
 .txt-blue{
-    font-size: 40px;
+    font-size: 44px;
     color: rgb(144, 144, 243);
-    font-family: "Oleo Script", system-ui;
-    font-weight: 300;
+    font-family: "Playfair", serif;
+    font-weight: bold;
 }
 
 .text-3{
@@ -62,6 +68,7 @@
 .text-3 p{
     color: rgba(0, 0, 0, 0.617);
     text-align: left;
+    margin-top: 25px;
 }
 
 /* =======================
@@ -100,7 +107,7 @@
 }
 
 #btn-falar-no-whatsapp{
-    background:#07BA07;
+    background:#25D366;
     width: 100%;
 }
 

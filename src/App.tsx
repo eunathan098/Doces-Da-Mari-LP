@@ -13,6 +13,7 @@ function App() {
       <main>
         <Section />
       </main>
+      
         <FAQ/>
       <Footer />
     </>
